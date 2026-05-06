@@ -19,6 +19,7 @@
 
 ```javascript
 const convertData = (input) => {
-  return []; // ここを作りましょう！
+  input.sort((a,b)=>a.count-b.count);
+  return input.slice(0,20); // ここを作りましょう！
 };
 ```
