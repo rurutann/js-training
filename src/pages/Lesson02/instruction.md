@@ -19,7 +19,9 @@
 
 ```javascript
 const convertData = (input) => {
-  input.sort((a,b)=>a.count-b.count);
+  input.sort((a,b)=>b.count-a.count);
+  */b-a降順 a-b昇順\*
   return input.slice(0,20); // ここを作りましょう！
+    */sliceで上位20件を抜き取る\*
 };
 ```

@@ -22,5 +22,8 @@
 ```javascript
 const convertData = (input) => {
   return []; // ここを作りましょう！
+  
+  */filterで条件に合うものだけを残すことができる。配列の中のgenderという要素が男だったらtrue\*
+  */==だと型変換がおきてしまうため===\*
 };
 ```

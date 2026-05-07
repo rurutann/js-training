@@ -35,7 +35,9 @@
 
 ```javascript
 const convertData = (input) => {
-  return input.map((["name","count"])=>({
+  */mapはデータの集まり\*配列の中身を変換して新しい配列を作る
+  return input.map(([name,count])=>({
+    */inputの中身を１個ずつ処理して新しい配列を作る\*
     name,
     count,
   })); // ここを作りましょう！
