@@ -74,6 +74,7 @@ const convertData = (input) => {
   const count = {};
   for (const tag1 of tags) {
     count[tag1] = {};
+    空のobjectを作る
     for (const tag2 of tags) {
       count[tag1][tag2] = 0;
       tag1とtag2を0にする
@@ -95,10 +96,12 @@ const convertData = (input) => {
   for (const tag1 of tags) {
     for (const tag2 of tags) {
       if (count[tag1][tag2] >= 2) {
+        tag1とtag2が一緒に出た回数が2回以上
         links.push({
           source: tag1,
           target: tag2,
         });
+        linksの末尾に追加
       }
     }
   }
