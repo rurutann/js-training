@@ -4,7 +4,21 @@ import Chart from "../../components/Chart06";
 import instruction from "./instruction.md?raw";
 
 const convertData = (input) => {
-  return []; // ここを作りましょう！
+  const colors={
+    男性:"blue",
+    女性:"red",
+  };
+  /*色を付ける*/
+  return input.map(({gender,x,y})=>{
+    return {
+      /*新しいデータを作る*/
+      color:colors[gender],
+      gender,
+      bmi:x/(y/100)**2,
+      weight:x,
+      height:y,
+    };
+  }); // ここを作りましょう！
 };
 
 const Lesson = () => {
